@@ -26,6 +26,7 @@ type yty struct {
 }
 
 func Signup(w http.ResponseWriter, r *http.Request) {
+
 	err := godotenv.Load()
 	if err != nil {
 		http.Error(w, "internal server error", 500)
